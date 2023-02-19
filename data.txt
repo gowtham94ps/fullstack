@@ -1,0 +1,7 @@
+{
+  "name": "arunKumar",
+  "email": "arunchandru122@gmail.com",
+  "phone": 7879999349,
+  "salary": 50000,
+  "department": "Software Developer"
+}
