@@ -5,3 +5,18 @@
   "salary": 50000,
   "department": "Software Developer"
 }
+
+
+
+ORDERS:::::::::::::::
+
+
+{
+  "product": "The National Council of Teachers of English",
+  "customer": "John sanders",
+  "date": "17/01/2023",
+  "time": "09:10PM",
+  "status": "paid",
+  "total": "$259.35",
+  "action": "view"
+}

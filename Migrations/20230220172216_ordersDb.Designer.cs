@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebApplicationAPI.Data;
 
@@ -11,9 +12,10 @@ using WebApplicationAPI.Data;
 namespace WebApplicationAPI.Migrations
 {
     [DbContext(typeof(PortalDbContext))]
-    partial class PortalDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230220172216_ordersDb")]
+    partial class ordersDb
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -60,8 +62,8 @@ namespace WebApplicationAPI.Migrations
                     b.Property<string>("Customer")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Date")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<long>("Date")
+                        .HasColumnType("bigint");
 
                     b.Property<string>("Product")
                         .HasColumnType("nvarchar(max)");
@@ -69,8 +71,8 @@ namespace WebApplicationAPI.Migrations
                     b.Property<string>("Status")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Time")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<long>("Time")
+                        .HasColumnType("bigint");
 
                     b.Property<string>("Total")
                         .HasColumnType("nvarchar(max)");

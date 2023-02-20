@@ -11,5 +11,6 @@ namespace WebApplicationAPI.Data
         }
 
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<OrderDetails> OrderDetails { get; set; }
     }
 }
